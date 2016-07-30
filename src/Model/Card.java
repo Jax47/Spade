@@ -92,7 +92,19 @@ public class Card implements Comparable<Card> {
 		}	
 	
 	}
-
+	
+	//The card's suit and value object
+	private final Suit suit;
+	private final Value val;
+	
+	//The card unique id
+	private final int Card_ID;
+	
+	public Card(Suit suit, Value val){
+		this.suit = suit;
+		this.val = val;
+		this.Card_ID = (this.suit.getVal(), this.val.getVal());
+	}
 	@Override
 	public int compareTo(Card o) {
 		// TODO Auto-generated method stub
