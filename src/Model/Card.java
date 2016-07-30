@@ -1,5 +1,11 @@
 package Model;
 
+import java.awt.Dimension;
+import java.util.Collection;
+import java.util.Set;
+
+import Util.Pair;
+
 /*
  * $Id:
  * 
@@ -98,13 +104,16 @@ public class Card implements Comparable<Card> {
 	private final Value val;
 	
 	//The card unique id
-	private final int Card_ID;
+	private final Pair Card_ID;
 	
 	public Card(Suit suit, Value val){
 		this.suit = suit;
 		this.val = val;
-		this.Card_ID = (this.suit.getVal(), this.val.getVal());
+		this.Card_ID = new Pair(this.suit.getVal(), this.val.getVal());
+		
 	}
+	
+	
 	@Override
 	public int compareTo(Card o) {
 		// TODO Auto-generated method stub
