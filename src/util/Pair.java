@@ -1,4 +1,4 @@
-package Util;
+package util;
 /*
  * A class that is substituted for a tuple.
  */

@@ -1,11 +1,11 @@
-package Model;
+package model;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.EnumSet;
 import java.util.Iterator;
 
-import Util.Pair;
+import util.Pair;
 
 /*
  * $Id:
