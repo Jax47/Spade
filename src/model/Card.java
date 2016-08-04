@@ -225,6 +225,10 @@ public class Card implements Comparable<Card> {
 		}
 		return 0;
 	}
-
+	
+	public String toString(){
+		
+		return this.getValue() + " of " + this.getSuit()+ " .";
+	}
 
 }

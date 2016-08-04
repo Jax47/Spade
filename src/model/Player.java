@@ -24,10 +24,10 @@ public class Player {
 	 * Initialize player object
 	 * 
 	 * @param name Player's name
-	 * @param hand an arraylist of card that represent the player's hand.
+	 * \@param hand an arraylist of card that represent the player's hand.\Commented out
 	 * @param book the number of hand the player won
 	 */
-	public Player(String name, ArrayList<Card> hand){
+	public Player(String name /*ArrayList<Card> hand*/){
 		
 		this.name = name;
 		this.hand = new ArrayList<Card>();
@@ -143,6 +143,7 @@ public class Player {
 		/*Check game history to see if any of the card had already been played
 		 * and remove it from the arraylist. */ 
 		for(Card item: cardWeakness){
+			//Check if the card was already played
 			if(model.Spade.history.contains(item)){
 				cardWeakness.remove(item);
 			}
@@ -150,5 +151,26 @@ public class Player {
 
 		return 0;
 	}
+
+	
+	public String toString(){
+		
+		return this.name + " has " + this.hand.size() + " card." ;
+		
+	}
+	
+	/**
+	 * A method that print the index of each card in 
+	 * a player hand.
+	 */
+	public void printHand(){
+		
+		for(Card card : this.hand){
+			
+			System.out.println("Card " + this.hand.indexOf(card) + " is a " + 
+					card.getValue() + " of " + card.getSuit() + ".");
+		}
+		System.out.println();
+	} 
 	
 }
