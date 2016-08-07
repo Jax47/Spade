@@ -153,11 +153,11 @@ public class Player {
 	}
 
 	
-	public String toString(){
+	/*public String toString(){
+	
+		return this.name + " has " + this.book + " books." ;
 		
-		return this.name + " has " + this.hand.size() + " card." ;
-		
-	}
+	}*/
 	
 	/**
 	 * A method that print the index of each card in 
