@@ -23,9 +23,13 @@ public class Spade {
 		//An arraylist that contain all the card that has been played
 		protected static ArrayList<Card> history = new ArrayList<Card>();
 		
-		//
+		/**
+		 * A method to get the arraylist of Card object
+		 * that was already played and discarded. 
+		 * @return
+		 */
 		public ArrayList<Card> getHistory(){
-			return history;
+			return Spade.history;
 		}
 		
 		
