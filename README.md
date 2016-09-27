@@ -1,3 +1,3 @@
 # Spade
 
-A game devolpment project base on the card game Spade.
+A game development project base on the card game Spade.
