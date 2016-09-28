@@ -9,6 +9,7 @@ import view.*;
 
 public class SpadeController {
 	
+	Listener listen = new Listener();
 	SpadeView view = new SpadeView();
 	
 	/**
@@ -44,18 +45,22 @@ public class SpadeController {
 			switch(card.getSuit()){
 			case Club:
 				button = new JButton(card.getValue().toString(), view.getClubIC());
+				listen.addButtonListener(button);
 				view.getClub().add(button);
 				break;
 			case Diamond:
 				button = new JButton(card.getValue().toString(), view.getDiamondIC());
+				listen.addButtonListener(button);
 				view.getDiamond().add(button);
 				break;
 			case Heart:
 				button = new JButton(card.getValue().toString(), view.getHeartIC());
+				listen.addButtonListener(button);
 				view.getHeart().add(button);
 				break;
 			case Spade:
 				button = new JButton(card.getValue().toString(), view.getSpadeIC());
+				listen.addButtonListener(button);
 				view.getSpade().add(button);
 				break;
 			default:
