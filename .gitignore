@@ -1,0 +1,5 @@
+# Temporary Files
+.*.swp
+
+# Test Folder
+src/test/
