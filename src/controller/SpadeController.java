@@ -44,24 +44,29 @@ public class SpadeController {
 			JButton button;
 			switch(card.getSuit()){
 			case Club:
-				button = new JButton(card.getValue().toString(), view.getClubIC());
-				listen.addButtonListener(button);
-				view.getClub().add(button);
+				
+				button = new JButton(card.getValue().toString(), view.getClubIC()); //Create new JButton
+				button.setActionCommand(card.toString()); //Set actionCommand to the card value and suit
+				listen.addButtonListener(button); //Register the button with an action listener
+				view.getClub().add(button); //Add the button to the view
 				break;
 			case Diamond:
-				button = new JButton(card.getValue().toString(), view.getDiamondIC());
-				listen.addButtonListener(button);
-				view.getDiamond().add(button);
+				button = new JButton(card.getValue().toString(), view.getDiamondIC()); //Create new JButton
+				button.setActionCommand(card.toString()); //Set actionCommand to the card value and suit
+				listen.addButtonListener(button); //Register the button with an action listener
+				view.getDiamond().add(button); //Add the button to the view 
 				break;
 			case Heart:
-				button = new JButton(card.getValue().toString(), view.getHeartIC());
-				listen.addButtonListener(button);
-				view.getHeart().add(button);
+				button = new JButton(card.getValue().toString(), view.getHeartIC()); //Create new JButton
+				button.setActionCommand(card.toString()); //Set actionCommand to the card value and suit
+				listen.addButtonListener(button); //Register the button with an action listener
+				view.getHeart().add(button); //Add the button to the view
 				break;
 			case Spade:
-				button = new JButton(card.getValue().toString(), view.getSpadeIC());
-				listen.addButtonListener(button);
-				view.getSpade().add(button);
+				button = new JButton(card.getValue().toString(), view.getSpadeIC()); //Create new JButton
+				button.setActionCommand(card.toString()); //Set actionCommand to the card value and suit
+				listen.addButtonListener(button); //Register the button with an action listener
+				view.getSpade().add(button); //Add the button to the view
 				break;
 			default:
 				//Return an error if none of the suit are a match
