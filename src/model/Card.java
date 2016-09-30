@@ -114,6 +114,14 @@ public class Card implements Comparable<Card> {
 		
 	}
 	/**
+	 * A method to return the card's ID
+	 * 
+	 * @return the card_ID of the card object
+	 */
+	public Pair getCard_ID() {
+		return Card_ID;
+	}
+	/**
 	 * A method to return the card's Suit value
 	 * 
 	 * @return The suit value of a card object.
