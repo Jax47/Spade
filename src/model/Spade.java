@@ -141,11 +141,11 @@ public class Spade {
 		//i.e the first element in the Deck ArrayList
 		final int  top = 0;
 
-		//Initialize a card object to use the initializeDeck method
-		Card pod = new Card(null, null);
+		//Initialize a Deck object to use the initializeDeck method
+		Deck dealer =  new Deck();
 
 		//Create a deck of card
-		ArrayList<Card> Deck = pod.initalizeDeck();
+		ArrayList<Card> Deck = dealer.initalizeDeck();
 
 		if(maxTurn == 2){
 			Boolean bool = true;
